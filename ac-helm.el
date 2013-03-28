@@ -54,7 +54,7 @@
 
 ;;; History:
 
-;; Version 1.7  2013/03/29 Yasuyuki Oka <yasuyk@gmail.com
+;; Version 1.7  2013/03/29 Yasuyuki Oka <yasuyk@gmail.com>
 ;; * port to helm.
 ;;   The original source code is below:
 ;;   http://www.emacswiki.org/cgi-bin/wiki/download/ac-anything.el
