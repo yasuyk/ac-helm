@@ -45,7 +45,7 @@
 
 ;; Installation:
 
-;; Add below code in your ~/.emacs
+;; Add the following to your emacs init file:
 ;;
 ;; (require 'ac-helm)
 ;; (define-key ac-complete-mode-map (kbd "C-:") 'ac-complete-with-helm)
