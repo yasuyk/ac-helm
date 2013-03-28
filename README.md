@@ -1,6 +1,6 @@
 # ac-helm.el
 
-Auto Complete with Helm. A `ac-anything.el` fork.
+Auto Complete with Helm. A `ac-anything.el` fork ported to Helm.
 
 ## Installation
 
