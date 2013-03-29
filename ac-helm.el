@@ -7,7 +7,7 @@
 ;;         Yasuyuki Oka <yasuyk@gmail.com>
 ;; Maintainer: Yasuyuki Oka <yasuyk@gmail.com>
 ;; Version: 1.7
-;; Package-Requires: ((helm "20130328")(auto-complete "20130324")(popup "20130324"))
+;; Package-Requires: ((helm "20130328")(auto-complete "1.4.0")(popup "0.5.0"))
 ;; Keywords: completion, convenience, helm
 
 ;; This file is free software; you can redistribute it and/or modify
