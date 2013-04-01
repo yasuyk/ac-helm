@@ -93,7 +93,7 @@
 It is useful to narrow candidates."
   (interactive)
   (when ac-completing
-    (with-helm-show-completion (point) (point)
+    (with-helm-show-completion ac-point ac-last-point
      (helm :sources 'helm-source-auto-complete-candidates
            :buffer  "*helm auto-complete*"))))
 
