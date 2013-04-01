@@ -6,7 +6,7 @@
 ;; Author: rubikitch <rubikitch@ruby-lang.org>
 ;;         Yasuyuki Oka <yasuyk@gmail.com>
 ;; Maintainer: Yasuyuki Oka <yasuyk@gmail.com>
-;; Version: 1.8
+;; Version: 1.9
 ;; Package-Requires: ((helm "20130328")(auto-complete "1.4.0")(popup "0.5.0"))
 ;; Keywords: completion, convenience, helm
 
@@ -54,6 +54,10 @@
 
 ;;; History:
 
+;; Version 1.9  2013/04/02 Yasuyuki Oka <yasuyk@gmail.com>
+;; * Remove "Warning: `delete-backward-char'"
+;;   replace delete-backward-char to delete-char
+;;
 ;; Version 1.8  2013/04/01 Yasuyuki Oka <yasuyk@gmail.com>
 ;; * Fix bug that don't show current completion by overlay
 ;;
