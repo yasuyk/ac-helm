@@ -6,7 +6,7 @@
 ;; Author: rubikitch <rubikitch@ruby-lang.org>
 ;;         Yasuyuki Oka <yasuyk@gmail.com>
 ;; Maintainer: Yasuyuki Oka <yasuyk@gmail.com>
-;; Version: 1.7
+;; Version: 1.8
 ;; Package-Requires: ((helm "20130328")(auto-complete "1.4.0")(popup "0.5.0"))
 ;; Keywords: completion, convenience, helm
 
@@ -54,6 +54,9 @@
 
 ;;; History:
 
+;; Version 1.8  2013/04/01 Yasuyuki Oka <yasuyk@gmail.com>
+;; * Fix bug that don't show current completion by overlay
+;;
 ;; Version 1.7  2013/03/29 Yasuyuki Oka <yasuyk@gmail.com>
 ;; * port to helm.
 ;;   The original source code is below:
