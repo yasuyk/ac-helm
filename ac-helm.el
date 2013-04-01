@@ -108,7 +108,7 @@ It is useful to narrow candidates."
   (ac-abort))
 
 (defun helm-auto-complete-action (string)
-  (delete-backward-char (length (helm-attr 'ac-prefix)))
+  (delete-char (- (length (helm-attr 'ac-prefix))))
   (insert string)
   (prog1 (let ((action (get-text-property 0 'action string)))
            (if action (funcall action)))
