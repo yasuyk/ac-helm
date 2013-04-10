@@ -137,6 +137,7 @@ It is useful to narrow candidates."
     (init . helm-auto-complete-init)
     (candidates . helm-auto-complete-candidates)
     (action . helm-auto-complete-action)
+    (persistent-action . popup-item-show-help)
     (ac-candidates)
     (menu-width)))
 
