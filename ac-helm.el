@@ -6,7 +6,7 @@
 ;; Author: rubikitch <rubikitch@ruby-lang.org>
 ;;         Yasuyuki Oka <yasuyk@gmail.com>
 ;; Maintainer: Yasuyuki Oka <yasuyk@gmail.com>
-;; Version: 2.0
+;; Version: 2.1
 ;; Package-Requires: ((helm "20130328")(auto-complete "1.4.0")(popup "0.5.0"))
 ;; Keywords: completion, convenience, helm
 
@@ -54,6 +54,9 @@
 
 ;;; History:
 
+;; Version 2.1  2013/04/12 Yasuyuki Oka <yasuyk@gmail.com>
+;; * Add a missing autoload cookie to `ac-complete-with-helm'
+;;
 ;; Version 2.0  2013/04/11 Yasuyuki Oka <yasuyk@gmail.com>
 ;; * Add persistent-action to show documentation.
 ;;
