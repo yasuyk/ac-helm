@@ -98,6 +98,7 @@
 (require 'auto-complete)
 (require 'popup)
 
+;;;###autoload
 (defun ac-complete-with-helm ()
   "Select `auto-complete' candidates by `helm'.
 It is useful to narrow candidates."
