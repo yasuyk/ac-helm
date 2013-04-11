@@ -47,7 +47,7 @@
 
 ;; Add the following to your emacs init file:
 ;;
-;; (require 'ac-helm)
+;; (require 'ac-helm) ;; Not necessary if using ELPA package
 ;; (define-key ac-complete-mode-map (kbd "C-:") 'ac-complete-with-helm)
 
 ;; That's all.
