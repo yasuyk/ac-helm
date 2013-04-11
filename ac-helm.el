@@ -6,7 +6,7 @@
 ;; Author: rubikitch <rubikitch@ruby-lang.org>
 ;;         Yasuyuki Oka <yasuyk@gmail.com>
 ;; Maintainer: Yasuyuki Oka <yasuyk@gmail.com>
-;; Version: 2.0
+;; Version: 2.1
 ;; Package-Requires: ((helm "20130328")(auto-complete "1.4.0")(popup "0.5.0"))
 ;; Keywords: completion, convenience, helm
 
@@ -47,7 +47,7 @@
 
 ;; Add the following to your emacs init file:
 ;;
-;; (require 'ac-helm)
+;; (require 'ac-helm) ;; Not necessary if using ELPA package
 ;; (define-key ac-complete-mode-map (kbd "C-:") 'ac-complete-with-helm)
 
 ;; That's all.
