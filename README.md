@@ -1,6 +1,6 @@
 # ac-helm.el
 
-Auto Complete with Helm. A `ac-anything.el` fork ported to Helm.
+Auto Complete with Helm. A [ac-anything.el][ac-anything] fork ported to Helm.
 
 ## Installation
 
@@ -29,3 +29,4 @@ It is useful to narrow candidates.
 [melpa]: http://melpa.milkbox.net
 [auto-complete]:https://github.com/auto-complete/auto-complete
 [helm]:https://github.com/emacs-helm/helm
+[ac-anything]:http://www.emacswiki.org/emacs/ac-anything.el
