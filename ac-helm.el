@@ -1,4 +1,4 @@
-;;; ac-helm.el --- Auto Complete with Helm
+;;; ac-helm.el --- Helm interface for auto-complete
 
 ;; Copyright (C) 2009  rubikitch
 ;; Copyright (C) 2013  Yasuyuki Oka <yasuyk@gmail.com>
@@ -48,6 +48,7 @@
 ;; Add the following to your emacs init file:
 ;;
 ;; (require 'ac-helm) ;; Not necessary if using ELPA package
+;; (global-set-key (kbd "C-:") 'ac-complete-with-helm)
 ;; (define-key ac-complete-mode-map (kbd "C-:") 'ac-complete-with-helm)
 
 ;; That's all.

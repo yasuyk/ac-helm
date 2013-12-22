@@ -1,6 +1,6 @@
 # ac-helm.el
 
-Auto Complete with Helm. A [ac-anything.el][ac-anything] fork ported to Helm.
+Helm interface for [auto-complete]. A [ac-anything.el][ac-anything] fork ported to Helm.
 
 ## Installation
 
@@ -15,6 +15,7 @@ directory containing `ac-helm.el` to your `load-path`, and then `(require 'ac-he
 Add the following to your emacs init file:
 
     (require 'ac-helm)  ;; Not necessary if using ELPA package
+    (global-set-key (kbd "C-:") 'ac-complete-with-helm)
     (define-key ac-complete-mode-map (kbd "C-:") 'ac-complete-with-helm)
 
 ### command
