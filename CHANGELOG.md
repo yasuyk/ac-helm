@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2 (12/22/2013)
+
+- Enable using ac-complete-with-helm without invoking ac-complete
+
 ## 2.1 (04/12/2013)
 - Add a missing autoload cookie to `ac-complete-with-helm'.
 
