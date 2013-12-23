@@ -77,6 +77,8 @@ It is useful to narrow candidates."
   (helm-attrset 'menu-width
                 (popup-preferred-width ac-candidates))
   (helm-attrset 'ac-prefix ac-prefix)
+  (when (<= (length ac-candidates) 1)
+    (helm-keyboard-quit))
   (ac-abort))
 
 (defun helm-auto-complete-action (string)
