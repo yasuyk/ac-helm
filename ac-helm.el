@@ -66,13 +66,11 @@
   "Select `auto-complete' candidates by `helm'.
 It is useful to narrow candidates."
   (interactive)
-  (let ((last-point ac-last-point))
-    (unless ac-completing
-      (call-interactively 'auto-complete)
-      (setq last-point (point)))
-    (with-helm-show-completion ac-point last-point
+  (unless ac-completing
+    (call-interactively 'auto-complete))
+    (with-helm-show-completion ac-point (point)
       (helm :sources 'helm-source-auto-complete-candidates
-            :buffer  "*helm auto-complete*"))))
+            :buffer  "*helm auto-complete*")))
 
 (defun helm-auto-complete-init ()
   (helm-attrset 'ac-candidates ac-candidates)
