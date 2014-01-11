@@ -67,7 +67,7 @@
 It is useful to narrow candidates."
   (interactive)
   (unless ac-completing
-    (call-interactively 'auto-complete))
+    (auto-complete-1 :triggered 'trigger-key))
     (with-helm-show-completion ac-point (point)
       (helm :sources 'helm-source-auto-complete-candidates
             :buffer  "*helm auto-complete*")))
