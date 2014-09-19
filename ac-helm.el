@@ -7,7 +7,7 @@
 ;;         Yasuyuki Oka <yasuyk@gmail.com>
 ;; Maintainer: Yasuyuki Oka <yasuyk@gmail.com>
 ;; Version: 2.2
-;; Package-Requires: ((helm "20130328")(auto-complete "1.4.0")(popup "0.5.0"))
+;; Package-Requires: ((helm "20130328")(auto-complete "1.4.0")(popup "0.5.0") (cl-lib "0.5"))
 ;; Keywords: completion, convenience, helm
 
 ;; This file is free software; you can redistribute it and/or modify
@@ -59,6 +59,7 @@
 (require 'helm-match-plugin nil t)
 (require 'helm-elisp)
 (require 'auto-complete)
+(require 'cl-lib)
 (require 'popup)
 
 ;;;###autoload
@@ -90,17 +91,17 @@ It is useful to narrow candidates."
     (helm-attrset 'ac-candidates nil)))
 
 (defun helm-auto-complete-candidates ()
-  (loop for x in (helm-attr 'ac-candidates) collect
-        (cons
-         (helm-aif (get-text-property 0 'action x)
-             (format "%s%s <%s>"
-                     x
-                     ;; padding
-                     (make-string (- (helm-attr 'menu-width) (length x)) ? )
-                     ;; action function name
-                     it)
-           x)
-         x)))
+  (cl-loop for x in (helm-attr 'ac-candidates) collect
+           (cons
+            (helm-aif (get-text-property 0 'action x)
+                (format "%s%s <%s>"
+                        x
+                        ;; padding
+                        (make-string (- (helm-attr 'menu-width) (length x)) ? )
+                        ;; action function name
+                        it)
+              x)
+            x)))
 
 (defvar helm-source-auto-complete-candidates
   '((name . "Auto Complete")
