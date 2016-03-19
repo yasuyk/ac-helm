@@ -56,7 +56,7 @@
 ;;; Code:
 
 (require 'helm)
-(require 'helm-match-plugin nil t)
+(require 'helm-multi-match nil t)
 (require 'helm-elisp)
 (require 'auto-complete)
 (require 'cl-lib)
